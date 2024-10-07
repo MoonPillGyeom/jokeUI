@@ -1,5 +1,11 @@
-import Input from 'src/input';
+import Button from 'src/components/button';
+import Input from 'src/components/input';
 
 export default function Test() {
-  return <Input />;
+  return (
+    <>
+      <Button text='BUTTON!' />
+      <Input />
+    </>
+  );
 }
