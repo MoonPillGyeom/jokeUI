@@ -1,3 +1,0 @@
-interface InputProps {
-  placeholder: string;
-}
