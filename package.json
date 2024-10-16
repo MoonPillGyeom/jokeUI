@@ -1,6 +1,6 @@
 {
   "name": "moonjokeui",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "private": false,
   "main": "dist/cjs/index.js",
