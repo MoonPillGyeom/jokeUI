@@ -15,10 +15,18 @@
     "plugin:import/typescript",
     "plugin:testing-library/react",
     "prettier",
+    "plugin:storybook/recommended",
     "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react-refresh", "react", "react-hooks", "jsx-a11y", "eslint-plugin-import", "@typescript-eslint"],
+  "plugins": [
+    "react-refresh",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "eslint-plugin-import",
+    "@typescript-eslint"
+  ],
   "settings": {
     "import/resolver": {
       "typescript": {
@@ -45,7 +53,19 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal", ["parent", "sibling"], "object", "unknown", "type", "index"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          [
+            "parent",
+            "sibling"
+          ],
+          "object",
+          "unknown",
+          "type",
+          "index"
+        ],
         "pathGroups": [
           {
             "pattern": "react",
@@ -86,7 +106,9 @@
             "group": "index"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["builtin"],
+        "pathGroupsExcludedImportTypes": [
+          "builtin"
+        ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
