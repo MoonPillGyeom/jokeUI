@@ -23,9 +23,16 @@ describe('Button', () => {
 
   it('renders the correct classes', () => {
     const fn = jest.fn();
-    render(<Button variant='primary' onClick={fn} data-testid='p-btn' />);
+    render(<Button onClick={fn} data-testid='p-btn' />);
 
     const pBtn = screen.getByTestId('p-btn');
-    expect(pBtn).toHaveClass('pill-button test');
+    expect(pBtn).toHaveClass('text-white');
+  });
+
+  it('button color is red?', () => {
+    render(<Button data-testid='p-btn' className='bg-white' />);
+    const pBtn = screen.getByTestId('p-btn');
+    const styles = window.getComputedStyle(pBtn);
+    expect(styles.backgroundColor).toBe('white');
   });
 });

@@ -26,7 +26,14 @@ export default [
       typescript({
         tsconfig: './tsconfig.json',
       }),
-      postcss({ extensions: ['.css'], minimize: true, sourceMap: true, modules: true }),
+
+      postcss({
+        config: { path: './postcss.config.js' },
+        extensions: ['.css'],
+        minimize: true,
+        sourceMap: true,
+        modules: true,
+      }),
     ],
   },
   {

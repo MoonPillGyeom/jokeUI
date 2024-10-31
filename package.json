@@ -22,28 +22,6 @@
       "\\.(css|less)$": "<rootDir>/src/tests/styleMock.ts"
     }
   },
-  "babel": {
-    "sourceType": "unambiguous",
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "chrome": 100,
-            "safari": 15,
-            "firefox": 91
-          }
-        }
-      ],
-      [
-        "@babel/preset-react",
-        {
-          "runtime": "automatic"
-        }
-      ],
-      "@babel/preset-typescript"
-    ]
-  },
   "keywords": [
     "react",
     "reactui",
@@ -58,7 +36,6 @@
   "description": "A ridiculous UI library built with React.",
   "devDependencies": {
     "@babel/core": "^7.25.2",
-    "@babel/plugin-transform-runtime": "^7.25.7",
     "@babel/preset-env": "^7.25.8",
     "@babel/preset-react": "^7.25.7",
     "@babel/preset-typescript": "^7.24.7",
@@ -67,15 +44,15 @@
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@storybook/addon-essentials": "^8.3.5",
-    "@storybook/addon-interactions": "^8.3.5",
-    "@storybook/addon-links": "^8.3.5",
-    "@storybook/addon-onboarding": "^8.3.5",
+    "@storybook/addon-essentials": "^8.3.6",
+    "@storybook/addon-interactions": "^8.3.6",
+    "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-onboarding": "^8.3.6",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
-    "@storybook/blocks": "^8.3.5",
-    "@storybook/react": "^8.3.5",
-    "@storybook/react-webpack5": "^8.3.5",
-    "@storybook/test": "^8.3.5",
+    "@storybook/blocks": "^8.3.6",
+    "@storybook/react": "^8.3.6",
+    "@storybook/react-webpack5": "^8.3.6",
+    "@storybook/test": "^8.3.6",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.13",
@@ -83,6 +60,7 @@
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.4.0",
     "@typescript-eslint/parser": "^8.4.0",
+    "autoprefixer": "^10.4.20",
     "babel-jest": "^29.7.0",
     "babel-preset-react-app": "^10.0.1",
     "eslint": "^8.57.0",
@@ -99,7 +77,7 @@
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
-    "storybook": "^8.3.5",
+    "storybook": "^8.3.6",
     "tailwindcss": "^3.4.13",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
