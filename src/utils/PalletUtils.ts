@@ -19,7 +19,7 @@ const PalletUtils = ({ contextRef, setColor, setPenWidth }: PalletUtilsProps) =>
 
   const handleAllEraser = () => {
     if (contextRef.current) {
-      contextRef.current.clearRect(0, 0, 1000, 800);
+      contextRef.current.clearRect(0, 0, contextRef.current.canvas.width, contextRef.current.canvas.height);
     }
   };
 
