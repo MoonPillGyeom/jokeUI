@@ -5,9 +5,12 @@ import LineDrawerUtils from '../../utils/LineDrawerUtils';
 export default function LineDrawer() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const contextRef = useRef<CanvasRenderingContext2D | null>(null);
+
   const [penWidth, setPenWidth] = useState(1);
   const [color, setColor] = useState('black');
+
   const { handleStartDrawing, handleDraw, handleStopDrawing } = LineDrawerUtils({ contextRef });
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas?.getContext('2d');
@@ -23,6 +26,7 @@ export default function LineDrawer() {
     <div>
       <Pallet contextRef={contextRef} setColor={setColor} setPenWidth={setPenWidth} />
       <canvas
+        data-testid='canvas'
         style={{ backgroundColor: '#eee' }}
         ref={canvasRef}
         width={1000}

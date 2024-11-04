@@ -27,11 +27,9 @@ export default function Pallet({ contextRef, setColor, setPenWidth }: PalletProp
       <Button onClick={handleClickColor}>Color</Button>
       {isColorList &&
         penColor.map((color, index) => (
-          <>
-            <Button onClick={() => handlePenColor(color)} key={index} style={{ backgroundColor: color }}>
-              {color}
-            </Button>
-          </>
+          <Button onClick={() => handlePenColor(color)} key={index} style={{ backgroundColor: color }}>
+            {color}
+          </Button>
         ))}
       <label htmlFor='penWidth'>Choose a penWidth:</label>
       <select id='penWidth' name='penWidth' onChange={handlePenWidth}>
