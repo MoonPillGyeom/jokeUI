@@ -1,6 +1,6 @@
 {
   "name": "moonjokeui",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "private": false,
   "main": "dist/cjs/index.js",
@@ -15,15 +15,6 @@
     "test": "jest --watchAll --verbose",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "jest": {
-    "setupFiles": [
-      "jest-canvas-mock"
-    ],
-    "testEnvironment": "jsdom",
-    "moduleNameMapper": {
-      "\\.(css|less)$": "<rootDir>/src/tests/styleMock.ts"
-    }
   },
   "keywords": [
     "react",
@@ -83,6 +74,7 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "^8.3.6",
     "tailwindcss": "^3.4.13",
+    "ts-node": "^10.9.2",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4"
   },
