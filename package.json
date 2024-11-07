@@ -10,6 +10,7 @@
     "dist"
   ],
   "scripts": {
+    "build:webpack": "webpack --config webpack.config.mjs",
     "dev": "rollup -c --watch",
     "build": "rollup -c",
     "test": "jest --watchAll --verbose",
@@ -29,10 +30,10 @@
   "license": "ISC",
   "description": "A ridiculous UI library built with React.",
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.8",
-    "@babel/preset-react": "^7.25.7",
-    "@babel/preset-typescript": "^7.24.7",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
     "@chromatic-com/storybook": "^1.9.0",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
@@ -56,6 +57,7 @@
     "@typescript-eslint/parser": "^8.4.0",
     "autoprefixer": "^10.4.20",
     "babel-jest": "^29.7.0",
+    "babel-loader": "^9.2.1",
     "babel-preset-react-app": "^10.0.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -74,9 +76,13 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "^8.3.6",
     "tailwindcss": "^3.4.13",
+    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "tslib": "^2.7.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   },
   "peerDependencies": {
     "react": "^18.3.1",
